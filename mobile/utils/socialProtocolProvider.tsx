@@ -14,7 +14,7 @@ const SocialProtocolProvider = () => {
 
   // Setup the configuration for the SocialProtocol
   const protocolOptions = {
-    rpcUrl: "https://api.mainnet-beta.solana.com/",
+    rpcUrl: "https://api.devnet.solana.com",
     useIndexer: true,
   } as ProtocolOptions;
 
