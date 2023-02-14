@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext, createContext } from "react";
 import { ProtocolOptions, SocialProtocol } from "@spling/social-protocol";
 import { transact } from "@solana-mobile/mobile-wallet-adapter-protocol-web3js";
-import useAuthorization from "../utils/useAuthorization";
+import useAuthorization from "./UseAuthorization";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 
 const SocialProtocolContext = createContext({});

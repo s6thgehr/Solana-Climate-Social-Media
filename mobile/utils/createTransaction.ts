@@ -11,7 +11,7 @@ import { transact } from "@solana-mobile/mobile-wallet-adapter-protocol-web3js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import React, { useState } from "react";
 // import { TextEncoder } from "text-encoding";
-import useAuthorization from "../utils/useAuthorization";
+import useAuthorization from "./UseAuthorization";
 
 export const recordMessage = async (
   messageBuffer: Buffer

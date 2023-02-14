@@ -12,7 +12,7 @@ import { ConnectionProvider } from "@solana/wallet-adapter-react";
 import { clusterApiUrl, PublicKey, PublicKeyInitData } from "@solana/web3.js";
 import React, { Suspense } from "react";
 import { Cache, SWRConfig } from "swr";
-import { SocialProtocolProvider } from "./utils/socialProtocolProvider";
+import { SocialProtocolProvider } from "./utils/SocialProtocolProvider";
 
 const DEVNET_ENDPOINT = /*#__PURE__*/ clusterApiUrl("devnet");
 
