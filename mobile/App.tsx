@@ -12,6 +12,7 @@ import { ConnectionProvider } from "@solana/wallet-adapter-react";
 import { clusterApiUrl, PublicKey, PublicKeyInitData } from "@solana/web3.js";
 import React, { Suspense } from "react";
 import { Cache, SWRConfig } from "swr";
+import { SocialProtocolProvider } from "./utils/socialProtocolProvider";
 
 const DEVNET_ENDPOINT = /*#__PURE__*/ clusterApiUrl("devnet");
 
@@ -63,10 +64,14 @@ export default function App() {
       endpoint={DEVNET_ENDPOINT}
     >
       <SWRConfig value={{ provider: asyncStorageProvider }}>
-        <View style={styles.container}>
-          <Text>Open up App.tsx to start working on your app!</Text>
-          <StatusBar style="auto" />
-        </View>
+        <SocialProtocolProvider>
+          {/* App goes here */}
+          <View style={styles.container}>
+            <Text>Open up App.tsx to start working on your app!</Text>
+            <StatusBar style="auto" />
+          </View>
+          {/* App ends here */}
+        </SocialProtocolProvider>
       </SWRConfig>
     </ConnectionProvider>
   );
