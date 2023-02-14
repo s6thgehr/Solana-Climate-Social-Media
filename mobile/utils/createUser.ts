@@ -1,5 +1,5 @@
 // This is an example function for calling the SocialProtocol instance and creating a new user
-import { useSocialProtocol } from "./socialProtocolProvider";
+import { useSocialProtocol } from "./SocialProtocolProvider";
 import { FileUriData, User } from "@spling/social-protocol";
 
 export const createNewUser = async (
